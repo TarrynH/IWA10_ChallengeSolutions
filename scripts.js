@@ -69,7 +69,7 @@ isEarlier = copied.date < holidays[6].date
 console.log('New date is earlier:', isEarlier)
 
 if (isEarlier) {
-    console.log('ID change:', holidays[christmas].id === copied.id)
+    console.log('ID change:', holidays[christmas].id === copied.id) // 
     console.log('Name change:', holidays[christmas].name === copied.name || copied.name)
     console.log('Date change:', holidays[christmas].date === copied.date || correctDate)
 }
@@ -123,8 +123,6 @@ paddedDate = String(randomDate).padStart(2,'0')
 
 randomMonth = randomHoliday.getMonth()+1
 paddedMonth = String(randomMonth).padStart(2,'0')
-
-randomYear = currentYear
 
 
 console.log(`${paddedDate}/${paddedMonth}/${currentYear}`)
